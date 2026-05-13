@@ -107,7 +107,6 @@ class CalculatorView:
         if self.controller:
             self.controller.on_button_click(button)
         else:
-            # Временно:直接在界面中添加字符
             current = self.get_expression()
             if button == 'C':
                 self.set_expression("")
